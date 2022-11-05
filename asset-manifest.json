@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mock-assessment-country-finder/static/css/main.d1f091b2.css",
-    "main.js": "/mock-assessment-country-finder/static/js/main.0dbfe028.js",
+    "main.css": "/mock-assessment-country-finder/static/css/main.0bd52509.css",
+    "main.js": "/mock-assessment-country-finder/static/js/main.5e1420a4.js",
     "index.html": "/mock-assessment-country-finder/index.html",
-    "main.d1f091b2.css.map": "/mock-assessment-country-finder/static/css/main.d1f091b2.css.map",
-    "main.0dbfe028.js.map": "/mock-assessment-country-finder/static/js/main.0dbfe028.js.map"
+    "main.0bd52509.css.map": "/mock-assessment-country-finder/static/css/main.0bd52509.css.map",
+    "main.5e1420a4.js.map": "/mock-assessment-country-finder/static/js/main.5e1420a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1f091b2.css",
-    "static/js/main.0dbfe028.js"
+    "static/css/main.0bd52509.css",
+    "static/js/main.5e1420a4.js"
   ]
 }
