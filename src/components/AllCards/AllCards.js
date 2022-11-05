@@ -28,8 +28,6 @@ export default function AllCards() {
         getAPIdata()
     }, [])
 
-    const flag = 'flag';
-
     return (
         <Fragment>
             <CardSize className={classes.home}>
