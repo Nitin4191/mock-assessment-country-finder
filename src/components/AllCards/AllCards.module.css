@@ -1,0 +1,16 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    padding: 3rem 0 3rem 0;
+    margin: 2rem auto auto auto;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+    }
+}
