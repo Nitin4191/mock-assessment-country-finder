@@ -1,31 +1,46 @@
 .home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
-    height: auto;
-    padding: 3rem 0 3rem 0;
-    margin: 2rem auto auto auto;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  padding: 3rem 0 3rem 0;
+  margin: 2rem auto auto auto;
+  text-align: center;
+}
+
+.home .enclosingCard {
+    background-color: #adadc9;
+}
+
+.home .imgdiv {
+    height: 10rem;
 }
 
 .home img {
-    height: auto;
-    width: 10rem;
+  height: 7rem;
+  width: 12rem;
 }
 
-.home .countryName, .home .population, .home .region, .home .capital {
-    width: 8.5rem;
-    text-align: left;
-    font-size: 0.8rem;
+.home .population,
+.home .region,
+.home .capital {
+  width: 10rem;
+  text-align: left;
+  font-size: 0.8rem;
+  height: 1rem;
 }
 
 .home .countryName {
-    word-wrap: break-word;
+  word-wrap: break-word;
+  font-size: 1rem;
+  position: relative;
+  width: 14rem;
+  top: -2rem;
 }
 
 @media (max-width: 768px) {
-    .home {
-        flex-direction: column;
-    }
+  .home {
+    flex-direction: column;
+  }
 }

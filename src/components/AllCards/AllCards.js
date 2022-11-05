@@ -3,17 +3,22 @@ import { Fragment, useState, useEffect } from 'react';
 import { Card, CardActions, CardContent, Button, Typography } from '@mui/material';
 import CardSize from '../UI/Card/CardSize';
 import classes from './AllCards.module.css';
+import Modal from '../UI/Modal/Modal'; 
 
 export default function AllCards() {
 
-    const [countryList, setCountryList] = useState([]);
+    const [countryList, setCountryList] = useState([]),
+        [showModal, setShowModal] = useState(false);
 
     const getAPIdata = async () => {
         const response = await fetch(`https://restcountries.com/v3.1/all`)
             .then(res => res.json())
         console.log(response);
         setCountryList(response);
-    }
+    },
+        moreDetailsClick = () => {
+            setShowModal(true);
+        }
 
     useEffect(() => {
         getAPIdata()
@@ -25,10 +30,14 @@ export default function AllCards() {
                 {countryList?.map((list) => {
                     // console.log(list);
                     return (
-                        <Card sx={{ minWidth: 255, ml: 2.5, mt: 2.5 }}>
+                        // {showModal && <Modal>
+                        //    </Modal>}
+                        <Card sx={{ minWidth: 255, ml: 2.5, mt: 2.5 }} className={classes.enclosingCard}>
                             <CardContent>
                                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                    <img src={list.flags.svg} alt='flag_image' loading='lazy' />
+                                    <div className={classes.imgdiv}>
+                                        <img src={list.flags.svg} alt='flag_image' loading='lazy' />
+                                    </div>
                                 </Typography>
                                 <Typography component="div" className={classes.countryName}>
                                     {list.name.common}
@@ -44,7 +53,7 @@ export default function AllCards() {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <Button size="small">More Details</Button>
+                                <Button size="small" onClick={moreDetailsClick}>More Details</Button>
                             </CardActions>
                         </Card>
                     )

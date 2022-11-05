@@ -5,7 +5,7 @@ import classes from './Modal.module.css';
 
 function Backdrop(props) {
     return (
-        <div className={classes.backdrop} onCLick={props.onClose}></div>
+        <div className={classes.backdrop} onClick={props.onClose}></div>
     );
 }
 
