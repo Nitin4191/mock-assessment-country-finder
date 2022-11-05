@@ -9,6 +9,21 @@
     text-align: center;
 }
 
+.home img {
+    height: auto;
+    width: 10rem;
+}
+
+.home .countryName, .home .population, .home .region, .home .capital {
+    width: 8.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+.home .countryName {
+    word-wrap: break-word;
+}
+
 @media (max-width: 768px) {
     .home {
         flex-direction: column;
