@@ -1,17 +1,8 @@
 import { Fragment, useState, useEffect } from 'react';
 
-import { Box, Card, CardActions, CardContent, Button, Typography } from '@mui/material';
+import { Card, CardActions, CardContent, Button, Typography } from '@mui/material';
 import CardSize from '../UI/Card/CardSize';
 import classes from './AllCards.module.css';
-
-const bull = (
-    <Box
-        component="span"
-        sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-        •
-    </Box>
-);
 
 export default function AllCards() {
 
